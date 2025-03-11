@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa XYZ - Productos</title>
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header: Contiene el logo y la navegación principal -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Empresa XYZ</h1>
+            </div>
+            <!-- Navegación principal del sitio -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="productos.html" class="active">Productos</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main: Contenido principal de la página -->
+    <main>
+        <div class="container">
+            <!-- Encabezado de página -->
+            <div class="page-header">
+                <h2>Nuestros Productos</h2>
+                <p>Descubra nuestra gama de productos de alta calidad diseñados para satisfacer las necesidades de su empresa.</p>
+            </div>
+
+            <!-- Filtros de productos -->
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="software">Software</button>
+                <button class="filter-btn" data-filter="hardware">Hardware</button>
+                <button class="filter-btn" data-filter="servicios">Servicios</button>
+            </div>
+
+            <!-- Catálogo de productos -->
+            <section class="products-grid">
+                <!-- Producto 1 -->
+                <div class="product-card" data-category="software">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1681487178876-a1156952ec60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZpY2luYXN8ZW58MHx8MHx8fDA%3D" alt="Software de Gestión Empresarial">
+                    </div>
+                    <div class="product-info">
+                        <h3>Software de Gestión Empresarial</h3>
+                        <p class="product-category">Software</p>
+                        <p class="product-description">Sistema integral para la gestión eficiente de recursos empresariales.</p>
+                        <div class="product-actions">
+                            <span class="product-price">Desde $1,999</span>
+                            <a href="contacto.html" class="btn-secondary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="product-card" data-category="hardware">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1681487178876-a1156952ec60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZpY2luYXN8ZW58MHx8MHx8fDA%3D" alt="Servidores de Alto Rendimiento">
+                    </div>
+                    <div class="product-info">
+                        <h3>Servidores de Alto Rendimiento</h3>
+                        <p class="product-category">Hardware</p>
+                        <p class="product-description">Servidores optimizados para entornos empresariales exigentes.</p>
+                        <div class="product-actions">
+                            <span class="product-price">Desde $3,499</span>
+                            <a href="contacto.html" class="btn-secondary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="product-card" data-category="software">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1681487178876-a1156952ec60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZpY2luYXN8ZW58MHx8MHx8fDA%3D" alt="Sistema de Seguridad Digital">
+                    </div>
+                    <div class="product-info">
+                        <h3>Sistema de Seguridad Digital</h3>
+                        <p class="product-category">Software</p>
+                        <p class="product-description">Protección avanzada contra amenazas cibernéticas para su empresa.</p>
+                        <div class="product-actions">
+                            <span class="product-price">Desde $1,299</span>
+                            <a href="contacto.html" class="btn-secondary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 4 -->
+                <div class="product-card" data-category="servicios">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1681487178876-a1156952ec60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZpY2luYXN8ZW58MHx8MHx8fDA%3D" alt="Plan de Mantenimiento Anual">
+                    </div>
+                    <div class="product-info">
+                        <h3>Plan de Mantenimiento Anual</h3>
+                        <p class="product-category">Servicios</p>
+                        <p class="product-description">Servicio de mantenimiento preventivo y correctivo para sus sistemas.</p>
+                        <div class="product-actions">
+                            <span class="product-price">Desde $899/año</span>
+                            <a href="contacto.html" class="btn-secondary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 5 -->
+                <div class="product-card" data-category="hardware">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1681487178876-a1156952ec60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZpY2luYXN8ZW58MHx8MHx8fDA%3D" alt="Equipos de Networking">
+                    </div>
+                    <div class="product-info">
+                        <h3>Equipos de Networking</h3>
+                        <p class="product-category">Hardware</p>
+                        <p class="product-description">Soluciones de conectividad para redes empresariales de cualquier tamaño.</p>
+                        <div class="product-actions">
+                            <span class="product-price">Desde $599</span>
+                            <a href="contacto.html" class="btn-secondary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 6 -->
+                <div class="product-card" data-category="servicios">
+                    <div class="product-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1681487178876-a1156952ec60?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8b2ZpY2luYXN8ZW58MHx8MHx8fDA%3D" alt="Capacitación Empresarial">
+                    </div>
+                    <div class="product-info">
+                        <h3>Capacitación Empresarial</h3>
+                        <p class="product-category">Servicios</p>
+                        <p class="product-description">Programas de formación para el personal de su empresa.</p>
+                        <div class="product-actions">
+                            <span class="product-price">Desde $499/sesión</span>
+                            <a href="contacto.html" class="btn-secondary">Más información</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de catálogo -->
+            <section class="catalog-section">
+                <h3>Solicite nuestro catálogo completo</h3>
+                <p>Descargue nuestro catálogo detallado con toda la información sobre nuestros productos y servicios.</p>
+                <a href="#" class="btn-primary">Descargar catálogo</a>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer: Contiene información de contacto y derechos de autor -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Empresa XYZ</h3>
+                    <p>Av. Principal 123<br>Ciudad Empresarial, País</p>
+                    <p>info@empresaxyz.com<br>+123 456 7890</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Suscríbase a nuestro boletín</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Su correo electrónico" required>
+                        <button type="submit" class="btn-primary">Suscribirse</button>
+                    </form>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Empresa XYZ. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
